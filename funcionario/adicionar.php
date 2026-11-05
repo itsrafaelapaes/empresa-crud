@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <?php
+    include_once("../menu.php");
+    ?>
+    <form action="inserir.php" method="POST" >
+    <p>
+        <label> nome: </label>
+        <input type="text" name="nome" required>
+    </p>
+    <p>
+    <label for= "email:">E-mail: </label>
+        <input type="email" name="email" required>
+    </p>
+    <p>
+    <label for= "cargo">Cargo: </label>
+        <input type="number" name="cargo" required>
+    </p>
+    <p>
+    <label for= "salario:">Sálario base: </label>
+        <input type="email" name="salario"  step="0.01" required>
+    </p>
+    <p>
+    <label for= "data:">Data de admissão: </label>
+        <input type="date" name="admissao" required>
+    </p>
+    <p>
+        <input type = "submit" value="Cadastrar">
+        <input type = "reset" value="Limpar">
+    </p>
+    
+    
+</body>
+</html>

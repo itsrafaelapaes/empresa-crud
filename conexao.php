@@ -6,10 +6,10 @@ $usuario="root";
 $senha= "";
 $bd="empresa";
 //chamar o comando pra conectar
-$result=mysqli_connect($servidor, $usuario, $senha, $bd);
-if ($result){
-    echo "Conexao realizada com sucesso"
+$conexao=mysqli_connect($servidor, $usuario, $senha, $bd);
+if ($conexao){
+    echo "Conexao realizada com sucesso";
 }
 else{
-    echo mysqli_error ($result);
+    echo mysqli_error ($conexao);
 }
