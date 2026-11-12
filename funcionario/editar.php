@@ -20,8 +20,8 @@
     ?>
     <div class="container">
         <h1>Edição de Funcionário</h1>
-        <form actin="atualizar.php" method="post">
-    <form action="inserir.php" method="POST" >
+      
+    <form action="atualizar.php" method="POST" >
     <p>
         <label> nome: </label>
         <input type="text" name="nome" required value="<?php echo $funcionario ['nome'];?>">
@@ -42,10 +42,7 @@
     <label for= "data:">Data de admissão: </label>
         <input type="date" name="admissao" required  value="<?php echo $funcionario['data_admissao'];?>">
     </p>
-    <p>
-        <input type = "submit" value="Cadastrar">
-        <input type = "reset" value="Limpar">
-    </p>
+    
     <p>
         <label for = "ativo"> Ativo: </label>
         <input type="checkbox" name="ativo" <?php if ($funcionario['ativo']==1) {echo 'checked'; } ?> >
